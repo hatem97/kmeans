@@ -15,9 +15,6 @@ pip
 python-dateutil
 pytz
 scikit-learn
-scipy
-setuptools
-six
 sklearn
 
 
