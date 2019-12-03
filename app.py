@@ -27,4 +27,4 @@ labels = kmn.predict(inputs)
 print(labels)
 api.add_resource(risultatoKMeans , '/risulatatoKMeans/<t_risposta>&<volte>') # Route_1
 if __name__ == '__main__':
-    app.run(port='5000')
+    app.run(debug=True, use_reloader=True)
