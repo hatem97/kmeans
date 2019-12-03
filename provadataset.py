@@ -8,6 +8,9 @@ import numpy as np
 from sklearn.cluster import KMeans 
 import matplotlib.pyplot as plt
 import pandas as pd
+from flask import Flask, request
+from flask_restful import Resource, Api
+
 
 app = Flask(__name__)
 api = Api(app)
