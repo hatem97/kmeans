@@ -8,6 +8,10 @@ import numpy as np
 from sklearn.cluster import KMeans 
 import matplotlib.pyplot as plt
 import pandas as pd
+
+app = Flask(__name__)
+api = Api(app)
+
 df = pd.read_csv (r'C:\Users\Contrader_0255\Desktop\Progetto SuperUltraSegreto\DatasetMaicol.csv')
 A=df['t_risposta']
 B=df['volte']
