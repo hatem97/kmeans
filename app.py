@@ -16,10 +16,12 @@ app = Flask(__name__)
 api = Api(app)
 
 class risultatoKmeans(Resource):
-    df = pd.read_csv (r'C:\Users\Contrader_0255\Desktop\Progetto SuperUltraSegreto\DatasetMaicol.csv')
-    A=df['t_risposta']
-    B=df['volte']
+
+
     def get(self,t_risposta,volte):
+        df = pd.read_csv (r'C:\Users\Contrader_0255\Desktop\Progetto SuperUltraSegreto\DatasetMaicol.csv')
+        A=df['t_risposta']
+        B=df['volte']
         inputs=pd.DataFrame({'t_risposta':A,'volte':B})
         kmn = KMeans(n_clusters=2)
         kmn.fit(inputs)
